@@ -3,11 +3,12 @@
 
 # It returns location of x in given array arr 
 # if present, else returns -1 
-def binarySearch(arr, l, r, x): 
+def binarySearch(arr, x): 
+	i=0
+	l=len(arr)-1
+	while i <= l: 
 
-	while l <= r: 
-
-		mid = l + (r - l)/2; 
+		mid = int((i + l)/2); 
 		
 		# Check if x is present at mid 
 		if arr[mid] == x: 
@@ -15,11 +16,11 @@ def binarySearch(arr, l, r, x):
 
 		# If x is greater, ignore left half 
 		elif arr[mid] < x: 
-			l = mid + 1
+			i = mid + 1
 
 		# If x is smaller, ignore right half 
 		else: 
-			r = mid - 1
+			l = mid - 1
 	
 	# If we reach here, then the element 
 	# was not present 
@@ -27,52 +28,14 @@ def binarySearch(arr, l, r, x):
 
 
 # Test array 
-arr = [ 2, 3, 4, 10, 40 ] 
-x = 10
+arr = [1,2,3,4,6,12,34,56,67,87,91,92,95,97] 
+x = 56
 
 # Function call 
-result = binarySearch(arr, 0, len(arr)-1, x) 
+result = binarySearch(arr, x) 
 
 if result != -1: 
-	print "Element is present at index % d" % result 
+	print ("Element is present at index % d" % result)
 else: 
-	print "Element is not present in array"
-# Python code to implement iterative Binary 
-# Search. 
+	print ("Element is not present in array")
 
-# It returns location of x in given array arr 
-# if present, else returns -1 
-def binarySearch(arr, l, r, x): 
-
-	while l <= r: 
-
-		mid = l + (r - l)/2; 
-		
-		# Check if x is present at mid 
-		if arr[mid] == x: 
-			return mid 
-
-		# If x is greater, ignore left half 
-		elif arr[mid] < x: 
-			l = mid + 1
-
-		# If x is smaller, ignore right half 
-		else: 
-			r = mid - 1
-	
-	# If we reach here, then the element 
-	# was not present 
-	return -1
-
-
-# Test array 
-arr = [ 2, 3, 4, 10, 40 ] 
-x = 10
-
-# Function call 
-result = binarySearch(arr, 0, len(arr)-1, x) 
-
-if result != -1: 
-	print "Element is present at index % d" % result 
-else: 
-	print "Element is not present in array"
