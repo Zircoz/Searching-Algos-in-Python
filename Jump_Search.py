@@ -28,7 +28,11 @@ def jumpSearch( arr , x ):
 
     # If element is found
     if arr[int(prev)] == x:
-        return int(prev)
+        indices = []
+        while int(prev) < n and arr[int(prev)] == x:
+            indices.append(int(prev))
+            prev+=1
+        return indices
 
     return -1
 
