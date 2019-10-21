@@ -9,5 +9,7 @@
 
 ## Current List of Searching Algos:
 - [Binary Search](https://github.com/Zircoz/Searching-Algos-in-Python/blob/master/Binary_Search.py)
+- [Jump Search](https://github.com/Zircoz/Searching-Algos-in-Python/blob/master/Jump_Search.py)
+- [Linear Search](https://github.com/Zircoz/Searching-Algos-in-Python/blob/master/Linear_Search.py)
 
 ## Proposed List of Sorting Algos:
