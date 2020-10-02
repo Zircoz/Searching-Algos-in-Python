@@ -1,5 +1,5 @@
 '''
-Explaination:
+Explanation:
 Exponential search make use of linear search and Binary search approach
 
 Step1: Finding the range of element we have entered
