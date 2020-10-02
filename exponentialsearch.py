@@ -1,3 +1,20 @@
+'''
+Explaination:
+Exponential search make use of linear search and Binary search approach
+
+Step1: Finding the range of element we have entered
+Step2:Using binary search to find the index
+Consider a sorted array, and an element x to be searched, find position of x in the array.
+
+So if,
+
+Input:  arr[] = {5, 10, 15, 20, 25}
+        x = 20
+Output will be: Element found at index 3
+
+Here Time Complexity = O(Log n)
+'''
+
 list1=list(map(int, input().split(" ")))
 val=int(input())
 if list1[0] == val:
