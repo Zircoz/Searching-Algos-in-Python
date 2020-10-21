@@ -11,6 +11,7 @@
 ## Current List of Searching Algos:
 - [Binary Search](Binary_Search.py)
 - [Exponential Search](exponentialsearch.py)
+- [Fibonacci Search](fibonacciSearch.py)
 - [Jump Search](Jump_Search.py)
 - [Linear Search](Linear_Search.py)
 
